@@ -1,5 +1,7 @@
 /**
- * Hledáme vývojáře, který nám pomůže s údržbou a rozvojem FlexiBee.
+ * Hledáme vývojáře, který nám pomůže s údržbou a rozvojem FlexiBee. 
+ * Člověka do týmu co se rád zlepšuje a posouvá věci dopředu. 
+ * Primárně hledá řešení a né problém.  
  * Pokud se nebojíš nastoupit do velkého projektu, rád programuješ 
  * a chceš dělat smysluplnou práci. Tak neváhej a přidej se k nám.
  *
@@ -9,13 +11,14 @@
  */
 public class Developer {
 
-	public static class Requirements {
+    public static class Requirements {
 
         final String LANGUAGE = "Java";
         final String TESTING = "JUnit";
         final String SQL_DIALECT = "Postgres";
         final String DEVELOPER_LEVEL = "Pokročilý";
         final String SKILL = "Schopnost hledat řešení";
+        final String[] HUMAN_LANGUAGES = { "Česky", "English" }
     }
 
     public class Advantages {
@@ -43,6 +46,7 @@ public class Developer {
             + "- Flexibilní pracovní dobu (občas můžeš pracovat z domova)\n"
             + "- Dotované kurzy angličtiny\n"
             + "- Osobní a individuální přístup\n"
+            + "- 5 týdnů dovolené\n"
             + "- Práci na hlavní pracovní poměr");
     }
 }
