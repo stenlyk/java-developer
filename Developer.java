@@ -1,24 +1,31 @@
 /**
- * Hledáme vývojáře, který nám pomůže s údržbou a rozvojem FlexiBee. 
- * Člověka do týmu co se rád zlepšuje a posouvá věci dopředu. 
- * Primárně hledá řešení a né problém.  
- * Pokud se nebojíš nastoupit do velkého projektu, rád programuješ 
- * a chceš dělat smysluplnou práci. Tak neváhej a přidej se k nám.
+ * Jsi JAVA vývojář, který se rád zlepšuje ve své práci a posouvá věci dopředu.
+ * Primárně hledá řešení a né problém.
+ * <p>
+ * Pokud se nebojíš nastoupit do velkého projektu, rád programuješ a chceš dělat
+ * smysluplnou práci. Tak neváhej a přidej se k nám. A pomoz nám rozvíjet
+ * FlexiBee účetní online software, který používá více než 6500 firem.
+ * <p>
+ * Jsme mladý dynamický tým s podporou ABRA Software.
  *
  * @author FlexiBee Systems s.r.o.
  * @version 1.0
- * @since 2017-10-31
+ * @since 2017-11-01
  */
 public class Developer {
 
-    public static class Requirements {
+    public class Requirements {
 
         final String LANGUAGE = "Java";
         final String TESTING = "JUnit";
         final String SQL_DIALECT = "Postgres";
         final String DEVELOPER_LEVEL = "Pokročilý";
         final String SKILL = "Schopnost hledat řešení";
-        final String[] HUMAN_LANGUAGES = { "Česky", "English" }
+        final String[] HUMAN_LANGUAGES = { "Česky", "English" };
+    }
+
+    public enum SkillLevel {
+        BEGINNER, INTERMEDIATE, NINJA, GOD
     }
 
     public class Advantages {
@@ -26,8 +33,8 @@ public class Developer {
         final String[] SKILLS = { "NoSQL (CouchDB)", "XML", "XSLT", "JIRA", "git", "Amazon AWS" };
         final String[] SPECIAL = { "Orientace v cizím kódu", "Znalost účetní problematiky" };
 
-        public String getRefactoringLevel() {
-            return "Ninja";
+        public SkillLevel getRefactoringLevel() {
+            return SkillLevel.NINJA;
         }
     }
 
